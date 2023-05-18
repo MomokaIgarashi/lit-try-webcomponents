@@ -1,21 +1,21 @@
 import {LitElement, html} from 'lit';
 
-export class MyElement extends LitElement {
+export class MomomokaCode extends LitElement {
+
     static properties = {
-      version: {},
+      message: {},
     };
-  
+    
     constructor() {
       super();
-      this.version = 'STARTING';
+      this.message = 'Hello again.';
     }
-  
+
     render() {
       return html`
-      <p>Welcome to the Lit tutorial!</p>
-      <p>This is the ${this.version} code.</p>
+        <p>${this.message}</p>
       `;
     }
 }
-customElements.define('my-element', MyElement);
+customElements.define('momoka-code', MomomokaCode);
   
