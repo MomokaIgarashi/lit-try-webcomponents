@@ -1,10 +1,14 @@
-import {LitElement, html} from 'lit';
+import {LitElement, css, html} from 'lit';
 
 export class MomomokaCode extends LitElement {
 
     static properties = {
       message: {},
     };
+
+    static styles = css`
+      p { color: blue }
+    `;
     
     constructor() {
       super();
